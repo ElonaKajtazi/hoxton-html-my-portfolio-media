@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail components</title>
+    <link rel="stylesheet" href="/css/gmail.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    .<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left-menu">
+        <button>
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+        <img
+          class="gmail-logo"
+          src="https://u01.appmifile.com/images/2019/05/25/65d91020-cff7-4ccd-b469-e5a5296e2e55.jpg"
+          alt="gmail logo"
+        />
+      </div>
+      <div class="header__search">
+        <div class="header__search__search-icon search-side">
+          <span class="material-symbols-outlined"> search </span>
+        </div>
+        <input
+          class="header__search__bar"
+          type="text"
+          placeholder="Search mail"
+        />
+        <div class="header__search__expand search-side">
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+      </div>
+      <div class="header__right-menu">
+        <button>
+          <span class="material-symbols-outlined"> help</span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> settings</span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> apps </span>
+        </button>
+        <button class="header__right-menu__profile">
+          <div class="container">
+          <span class="name">Ink |42 </span>
+          <img
+            class="profile-picture"
+            src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="profile picture"
+          />
+        </button>
+      </div>
+      </div>
+    </header>
+    <aside class="left-menu">
+      <nav class="menu-items"> 
+       <button class="compose"> 
+         <img 
+         src="https://support.virtru.com/hc/article_attachments/360045048294/mceclip0.png" 
+         alt="compose button">
+       </button>
+       <ul class="menu-item">
+         <li class="menu-item__inbox">
+           <div class="menu-item__inbox__icon">
+            <span class="material-symbols-outlined"> 
+              inbox 
+              <span>
+              </div>
+             <div class="menu-item__inbox__text"> Inbox </div>
+             <div class="menu-item__inbox__number">8</div>
+         </li>
+         <li class="menu-item__starred">
+           <div class="menu-item__starred__icon"> 
+            <span class="material-symbols-outlined"> 
+              star 
+              <span>
+           </div>
+           <div class="menu-item__starred__text">
+              Starred 
+            </div>
+           </li>
+             <li class="menu-item__snoozed">
+               <div class="menu-item__snoozed__icon">
+                <span class="material-symbols-outlined"> 
+                  schedule
+                  <span>
+               </div>
+               <div class="menu-item__snoozed__text">
+                  Snoozed    
+               </div>
+             </li>
+             <li class="menu-item__important">
+               <div class="menu-item__important__icon">
+                <span class="material-symbols-outlined"> 
+                label_important
+                <span>
+               </div>
+               <div class="menu-item__important__text">
+                Important 
+               </div>
+             </li>
+             <li class="menu-item__sent">
+               <div class="menu-item__sent__icon">
+                <span class="material-symbols-outlined"> 
+                  send
+                  <span>
+               </div>
+               <div class="menu-item__sent__text">
+                 Sent
+               </div>
+             </li>
+             <li class="menu-item__team">
+               <div class="menu-item__team__icon">
+                <span class="material-symbols-outlined"> 
+                 label
+                <span>
+                </div>
+                  <div class="menu-item__team__text">
+                    Team 
+               </div>
+             </li>
+             <li class="menu-item__new-rfps"> 
+               <div class="menu-item__new-rfps__icon">
+                <span class="material-symbols-outlined"> 
+                  label
+                 <span>
+               </div>
+               <div class="menu-item__new-rfps__text">
+                 New RFPs
+               </div>
+             </li>
+             <li class="menu-item__projects"> 
+              <div class="menu-item__projects__icon">
+               <span class="material-symbols-outlined"> 
+                 label
+                <span>
+              </div>
+              <div class="menu-item__projects__text">
+                Projects
+              </div>
+            </li>
+            <li class="menu-item__personal"> 
+              <div class="menu-item__personal__icon">
+               <span class="material-symbols-outlined"> 
+                 label
+                <span>
+              </div>
+              <div class="menu-item__personal__text">
+                Personal
+              </div>
+            </li>
+            <li class="menu-item__more"> 
+              <div class="menu-item__more__icon">
+               <span class="material-symbols-outlined"> 
+                 expand_more
+                <span>
+              </div>
+              <div class="menu-item__more__text">
+                More 
+              </div>
+            </li>
+       </ul>
+       <ul class="menu-item__meet">
+         <li class="menu-item__meet__text">
+         Meet 
+         <li class="menu-item__meet__start-a-meeting">
+           <div class="menu-item__meet__start-a-meeting__icon">
+            <span class="material-symbols-outlined">
+              videocam
+              </span>
+           </div>
+           <div class="menu-item__meet__start-a-meeting__text">
+             Start a meeting 
+           </div>
+         </li>
+         <li class="menu-item__meet__join-a-meeting">
+           <div class="menu-item__meet__join-a-meeting__icon">
+            <span class="material-symbols-outlined">
+              keyboard
+              </span>
+           </div>
+           <div class="menu-item__meet__join-a-meeting__text">
+             Join a meeting
+           </div>
+         </li>
+         </li>
+       </ul>
+       <ul class="menu-item__chat">
+         <li class="menu-item__chat__text">
+           Chat 
+           <li class="menu-item__chat__nina-xu">
+             <div class="menu-item__chat__nina-xu__profile-picture">
+               <img 
+               src="https://media.istockphoto.com/photos/springsummerautumn-photo-of-a-beautiful-girl-picture-id876199814?s=612x612"
+               alt="Nina Xu profile picture">
+             </div>
+             <div class="menu-item__chat__nina-xu__name">
+               Nina Xu
+             </div>
+             <div class="menu-item__chat__nina-xu__expand-icon">
+              <span class="material-symbols-outlined">
+                arrow_drop_down
+                </span>
+             </div>
+             <div class="menu-item__chat__nina-xu__plus-icon">
+              <span class="material-symbols-outlined">
+                add
+                </span>
+             </div>
+           </li>
+           <li class="menu-item__chat__tom-dow"> 
+             <div class="menu-item__chat__tom-dow__profile-picture">
+               <img 
+               src="https://images.pexels.com/photos/1121359/pexels-photo-1121359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+               alt="Tom Dow profile picture">
+             </div>
+             <div class="menu-item__chat__tom-dow__name">
+               Tom Dow
+               <p class="menu-item__chat__tom-dow__message"> 
+                  Sounds Great!
+                </p>
+              </div>
+           </li>
+         </li>
+         <li class="menu-item__chat__jessica-holman"> 
+          <div class="menu-item__chat__jessica-holman__profile-picture">
+            <img 
+            src="https://media.istockphoto.com/photos/young-woman-photographing-the-autumn-season-picture-id864516870?s=612x612" 
+            alt="Jessica Holman profile picture">
+          </div>
+          <div class="menu-item__chat__jessica-holman__name">
+            Jessica Holman 
+            <p class="menu-item__chat__jessica-holman__message">
+              Will be there in 5!
+            </p>
+          </div>
+        </li>
+       </ul>
+      </nav>
+      <nav class="left-menu__footer">
+        <span class="material-symbols-outlined">
+          person_filled
+          </span>
+          <span class="left-menu__footer__hangouts-icon">
+            <img 
+            src="https://png.pngitem.com/pimgs/s/171-1719746_transparent-hangouts-icon-png-google-hangouts-logo-png.png"
+            alt="Hangouts icon">
+          </span>
+          <span class="material-symbols-outlined">
+            android_dialer
+            </span>
+      </nav>
+      
+    </aside>
+    <main class="emails">
+      <ul class="email__icons">
+        <li class="email__icons__check-box">
+        <span class="material-symbols-outlined">
+          check_box_outline_blank
+          </span>
+        </li>
+        <li class="email__icons__arrow-drop-down">
+          <span class="material-symbols-outlined">
+            arrow_drop_down
+            </span>
+            </li>
+            <li class="email__icons__refresh">
+            <span class="material-symbols-outlined">
+              refresh
+              </span>
+              </li>
+              <li class="email__icons__more">
+              <span class="material-symbols-outlined">
+                more_vert
+                </span>
+                </li>
+                <li class="email__icons__numbers">
+                  1-16 of 16
+                </li>
+                <li class="email__icons__left-arrow">
+                <span class="material-symbols-outlined">
+                  chevron_left
+                  </span>
+                  </li>
+                  <li class="email__icons__right-arrow">
+                  <span class="material-symbols-outlined">
+                    chevron_right
+                    </span>
+                  </li>
+      </ul>
+                  <nav>
+                    <ul class="emails__list-of-emails">
+                    <li class="emails__email-1">
+                    <div class="emails__email-1__drag-icon">
+                      <span class="material-symbols-outlined">
+                        drag_indicator
+                      </span>
+                    </div>
+                    <div class="emails__email-1__check-box">
+                      <span class="material-symbols-outlined">
+                        check_box_outline_blank
+                        </span>
+                    </div>
+                  
+                    <div class="emails__email-1__star-icon">
+                    <span class="material-symbols-outlined">
+                      star
+                      </span>
+                    </div>
+                      <div class="emails__email-1__name">
+                        name lastname
+                      </div>
+                      <div class="emails__email-1__title">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                        </div>
+                        <div class="emails__email-1__time">
+                          2:25 PM
+                        </div>
+                    </li>
+                    <li class="emails__email-2">
+                      <div class="emails__email-2__check-box">
+                        <span class="material-symbols-outlined">
+                          check_box_outline_blank
+                          </span>
+                      </div>
+                      <div class="emails__email-2__star-icon">
+                        <span class="material-symbols-outlined">
+                          grade
+                          </span>
+                      </div>
+                        <div class="emails__email-2__name">
+                          name lastname
+                        </div>
+                        <div class="emails__email-2__title">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                          </div>
+                          <div class="emails__email-2__date">
+                            Nov 11
+                          </div>
+                      </li>
+                      <li class="emails__email-3">
+                        <div class="emails__email-3__check-box">
+                          <span class="material-symbols-outlined">
+                            check_box_outline_blank
+                            </span>
+                        </div>
+                        <div class="emails__email-3__star-icon">
+                          <span class="material-symbols-outlined">
+                            grade
+                            </span>
+                        </div>
+                          <div class="emails__email-3__name">
+                            name lastname
+                          </div>
+                          <div class="emails__email-3__title">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                            </div>
+                            <div class="emails__email-3__date">
+                              Nov 11
+                            </div>
+                        </li>
+                        <li class="emails__email-4">
+                          <div class="emails__email-4__check-box">
+                            <span class="material-symbols-outlined">
+                              check_box_outline_blank
+                              </span>
+                          </div>
+                          <div class="emails__email-4__star-icon">
+                          <span class="material-symbols-outlined">
+                            star
+                            </span>
+                          </div>
+                            <div class="emails__email-4__name">
+                              name lastname
+                            </div>
+                            <div class="emails__email-4__title">
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                              </div>
+                              <div class="emails__email-4__date">
+                                Nov 11
+                              </div>
+                          </li>
+                        </li>
+                        <li class="emails__email-5">
+                          <div class="emails__email-5__check-box">
+                            <span class="material-symbols-outlined">
+                              check_box_outline_blank
+                              </span>
+                          </div>
+                          <div class="emails__email-5__star-icon">
+                          <span class="material-symbols-outlined">
+                            star
+                            </span>
+                          </div>
+                            <div class="emails__email-5__name">
+                              name lastname
+                            </div>
+                            <div class="emails__email-5__title">
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                              </div>
+                              <div class="emails__email-5__date">
+                                Nov 11
+                              </div>
+                          </li>  
+                          <li class="emails__email-6">
+                            <div class="emails__email-6__check-box">
+                              <span class="material-symbols-outlined">
+                                check_box_outline_blank
+                                </span>
+                            </div>
+                            <div class="emails__email-6__star-icon">
+                              <span class="material-symbols-outlined">
+                                grade
+                                </span>
+                            </div>
+                              <div class="emails__email-6__name">
+                                name lastname
+                              </div>
+                              <div class="emails__email-6__title">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                </div>
+                                <div class="emails__email-6__date">
+                                  Nov 11
+                                </div>
+                                </li>
+                                <li class="emails__email-7">
+                                  <div class="emails__email-7__check-box">
+                                    <span class="material-symbols-outlined">
+                                      check_box_outline_blank
+                                      </span>
+                                  </div>
+                                  <div class="emails__email-7__star-icon">
+                                    <span class="material-symbols-outlined">
+                                      grade
+                                      </span>
+                                  </div>
+                                    <div class="emails__email-7__name">
+                                      name lastname
+                                    </div>
+                                    <div class="emails__email-7__title">
+                                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                      </div>
+                                      <div class="emails__email-7__date">
+                                        Nov 11
+                                      </div>
+                                  </li>
+                                  <li class="emails__email-8">
+                                    <div class="emails__email-8__check-box">
+                                      <span class="material-symbols-outlined">
+                                        check_box_outline_blank
+                                        </span>
+                                    </div>
+                                    <div class="emails__email-8__star-icon">
+                                      <span class="material-symbols-outlined">
+                                        grade
+                                        </span>
+                                    </div>
+                                      <div class="emails__email-8__name">
+                                        name lastname
+                                      </div>
+                                      <div class="emails__email-8__title">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                        </div>
+                                        <div class="emails__email-8__date">
+                                          Nov 11
+                                        </div>   
+                                        </li>
+                                        <li class="emails__email-9">
+                                          <div class="emails__email-7__check-box">
+                                            <span class="material-symbols-outlined">
+                                              check_box_outline_blank
+                                              </span>
+                                          </div>
+                                          <div class="emails__email-9__star-icon">
+                                            <span class="material-symbols-outlined">
+                                              grade
+                                              </span>
+                                          </div>
+                                            <div class="emails__email-9__name">
+                                              name lastname
+                                            </div>
+                                            <div class="emails__email-9__title">
+                                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                              </div>
+                                              <div class="emails__email-9__date">
+                                                Nov 11
+                                              </div>
+                                          </li>
+                                          <li class="emails__email-10">
+                                            <div class="emails__email-10__check-box">
+                                              <span class="material-symbols-outlined">
+                                                check_box_outline_blank
+                                                </span>
+                                            </div>
+                                            <div class="emails__email-10__star-icon">
+                                              <span class="material-symbols-outlined">
+                                                grade
+                                                </span>
+                                            </div>
+                                              <div class="emails__email-10__name">
+                                                name lastname
+                                              </div>
+                                              <div class="emails__email-10__title">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                                </div>
+                                                <div class="emails__email-10__date">
+                                                  Nov 11
+                                                </div>
+                                            </li>
+                                            <li class="emails__email-11">
+                                              <div class="emails__email-11__check-box">
+                                                <span class="material-symbols-outlined">
+                                                  check_box_outline_blank
+                                                  </span>
+                                              </div>
+                                              <div class="emails__email-11__star-icon">
+                                              <span class="material-symbols-outlined">
+                                                star
+                                                </span>
+                                              </div>
+                                                <div class="emails__email-11__name">
+                                                  name lastname
+                                                </div>
+                                                <div class="emails__email-11__title">
+                                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                                  </div>
+                                                  <div class="emails__email-11__date">
+                                                    Nov 11
+                                                  </div>
+                                                  <li class="emails__email-12">
+                                                    <div class="emails__email-12__check-box">
+                                                      <span class="material-symbols-outlined">
+                                                        check_box_outline_blank
+                                                        </span>
+                                                    </div>
+                                                    <div class="emails__email-12__star-icon">
+                                                      <span class="material-symbols-outlined">
+                                                        grade
+                                                        </span>
+                                                    </div>
+                                                      <div class="emails__email-12__name">
+                                                        name lastname
+                                                      </div>
+                                                      <div class="emails__email-12__title">
+                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                                        </div>
+                                                        <div class="emails__email-12__date">
+                                                          Nov 11
+                                                        </div>
+                                                        </li>
+                                                        <li class="emails__email-13">
+                                                          <div class="emails__email-13__check-box">
+                                                            <span class="material-symbols-outlined">
+                                                              check_box_outline_blank
+                                                              </span>
+                                                          </div>
+                                                          <div class="emails__email-13__star-icon">
+                                                            <span class="material-symbols-outlined">
+                                                              grade
+                                                              </span>
+                                                          </div>
+                                                            <div class="emails__email-13__name">
+                                                              name lastname
+                                                            </div>
+                                                            <div class="emails__email-13__title">
+                                                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                                              </div>
+                                                              <div class="emails__email-13__date">
+                                                                Nov 11
+                                                              </div>
+                                                              </li>
+                                                              <li class="emails__email-14">
+                                                                <div class="emails__email-6__check-box">
+                                                                  <span class="material-symbols-outlined">
+                                                                    check_box_outline_blank
+                                                                    </span>
+                                                                </div>
+                                                                <div class="emails__email-14__star-icon">
+                                                                  <span class="material-symbols-outlined">
+                                                                    grade
+                                                                    </span>
+                                                                </div>
+                                                                  <div class="emails__email-14__name">
+                                                                    name lastname
+                                                                  </div>
+                                                                  <div class="emails__email-614__title">
+                                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                                                    </div>
+                                                                    <div class="emails__email-14__date">
+                                                                      Nov 11
+                                                                    </div>
+                                                                    </li>
+                                                                    <li class="emails__email-15">
+                                                                      <div class="emails__email-15__check-box">
+                                                                        <span class="material-symbols-outlined">
+                                                                          check_box_outline_blank
+                                                                          </span>
+                                                                      </div>
+                                                                      <div class="emails__email-15__star-icon">
+                                                                        <span class="material-symbols-outlined">
+                                                                          grade
+                                                                          </span>
+                                                                      </div>
+                                                                        <div class="emails__email-15__name">
+                                                                          name lastname
+                                                                        </div>
+                                                                        <div class="emails__email-15__title">
+                                                                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                                                          </div>
+                                                                          <div class="emails__email-15__date">
+                                                                            Nov 11
+                                                                          </div>
+                                                                          </li>
+                                                                          <li class="emails__email-16">
+                                                                            <div class="emails__email-16__check-box">
+                                                                              <span class="material-symbols-outlined">
+                                                                                check_box_outline_blank
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="emails__email-16__star-icon">
+                                                                              <span class="material-symbols-outlined">
+                                                                                grade
+                                                                                </span>
+                                                                            </div>
+                                                                              <div class="emails__email-16__name">
+                                                                                name lastname
+                                                                              </div>
+                                                                              <div class="emails__email-16__title">
+                                                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                                                                </div>
+                                                                                <div class="emails__email-16__date">
+                                                                                  Nov 11
+                                                                                </div>
+                                                                                </li>
+                                                                              </li>
+                                                                              <li class="emails__email-17">
+                                                                                <div class="emails__email-17__check-box">
+                                                                                  <span class="material-symbols-outlined">
+                                                                                    check_box_outline_blank
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="emails__email-17__star-icon">
+                                                                                  <span class="material-symbols-outlined">
+                                                                                    grade
+                                                                                    </span>
+                                                                                </div>
+                                                                                  <div class="emails__email-17__name">
+                                                                                    name lastname
+                                                                                  </div>
+                                                                                  <div class="emails__email-17__title">
+                                                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, fugiat!.
+                                                                                    </div>
+                                                                                    <div class="emails__email-17__date">
+                                                                                      Nov 11
+                                                                                    </div>
+                                                                                    </li>
+                             </ul>
+                         </ul>
+                  </nav>
+                
+      
+    </main>
+    <aside class="right-menu">Right menu</aside>
+    <aside class="shortcuts">Shortcuts</aside>
+  </body>
+</html>
