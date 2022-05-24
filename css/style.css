@@ -2,21 +2,123 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
 }
+/* TOP SECTION */
 .top {
     background-color: #f46b50;
-    height: 100vh;
+    height: 70vh;
+    padding: 1rem;
+    display: grid;
+    align-content: space-between;
+    
 }
-.
+.top header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #35382e;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+.top header  a {
+    text-decoration: none;
+    color: white;
+}
+.header__items a {
+   text-decoration: none;
+}
+.header__items {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    gap: 1rem;
+}
+/* DESCRIPTION BOX SECTION */
+.description-box {
+    background-color: #35382e;
+    color: white;
+    width: 70vw;
+    max-width: 600px;
+    justify-self: center;
+    padding: 2rem;
+    border-radius: 3px;
+    display: grid;
+    gap: 0.8rem;   
+}
+.description-box__title {
+    color:#f7ca01;
+    text-align: center;
+}
+.expand {
+    text-align: center;
+    color: white;
+}
+/* PROJECTS SECTION */
 .projects {
     background-color: #ede6e2;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
 }
+.projects h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+.projects__list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem
+}
+.project-item {
+    border: 1px solid black;
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+}
+.projects__list h3 {
+    color: #ef6245;
+}
+.project-item a {
+background-color: #ef6245;
+color: white;
+text-decoration: none;
+text-align: center;
+padding: 0.5rem 0;
+border-radius: 3px;
+}
+/*EXPERIENCE SECTION */
 .experience {
     background-color: #5bc3eb;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
 }
-.top {
-
+.experience h3 {
+    text-align: center;
 }
+.experience-item {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 1px solid black;
+    padding: 1rem 0rem;
+    background-color: #ede6e2;
+}
+.experience-list {
+    display: grid;
+    gap: 1rem;
+}
+/* FOOTER SECTION */
 footer {
     background-color: #35382e;
+    padding: 0.5rem;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+
 }
