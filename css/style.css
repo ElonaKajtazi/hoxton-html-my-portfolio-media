@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
 }
 img{
+    width:100%
+}
+video {
     width: 100%;
 }
 /* TOP SECTION */
@@ -43,18 +46,20 @@ img{
     background-color: #35382e;
     color: white;
     width: 70vw;
-    max-width: 600px;
+    max-width: 500px;
     justify-self: center;
     padding: 2rem;
     border-radius: 3px;
     display: grid;
     gap: 0.8rem;  
+
 }
 .main-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
 }
+
 .description-box__title {
     color:#f7ca01;
     text-align: center;
@@ -106,6 +111,12 @@ img{
 }
 .project-item p {
     padding: 0rem 0.5rem;
+}
+.hoxton-media{
+    background: radial-gradient(#e66465, #9198e5);
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 /*EXPERIENCE SECTION */
 .experience {
